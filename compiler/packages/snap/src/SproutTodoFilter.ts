@@ -475,6 +475,7 @@ const skipFilter = new Set([
   'rules-of-hooks/rules-of-hooks-69521d94fa03',
 
   // bugs
+  'reduce-reactive-deps/bug-infer-function-cond-access-not-hoisted',
   'fbt/bug-fbt-plural-multiple-function-calls',
   'fbt/bug-fbt-plural-multiple-mixed-call-tag',
   'bug-invalid-hoisting-functionexpr',
