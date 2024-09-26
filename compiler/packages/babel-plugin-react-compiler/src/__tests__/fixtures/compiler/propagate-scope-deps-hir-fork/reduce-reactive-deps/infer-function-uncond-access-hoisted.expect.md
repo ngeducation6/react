@@ -4,7 +4,7 @@
 ```javascript
 // @enablePropagateDepsInHIR
 
-import { Stringify } from "shared-runtime";
+import {Stringify} from 'shared-runtime';
 
 function useFoo(a) {
   return <Stringify fn={() => a.b.c} shouldInvokeFns={true} />;
@@ -28,9 +28,9 @@ import { Stringify } from "shared-runtime";
 function useFoo(a) {
   const $ = _c(2);
   let t0;
-  if ($[0] !== a.b.c) {
+  if ($[0] !== a) {
     t0 = <Stringify fn={() => a.b.c} shouldInvokeFns={true} />;
-    $[0] = a.b.c;
+    $[0] = a;
     $[1] = t0;
   } else {
     t0 = $[1];

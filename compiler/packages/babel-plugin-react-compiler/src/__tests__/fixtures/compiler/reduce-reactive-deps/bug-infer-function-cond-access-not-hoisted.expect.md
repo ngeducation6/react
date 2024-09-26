@@ -2,13 +2,18 @@
 ## Input
 
 ```javascript
-import { Stringify } from "shared-runtime";
+import {Stringify} from 'shared-runtime';
 
 function Foo({a, shouldReadA}) {
-  return <Stringify fn={() => {
-    if (shouldReadA) return a.b.c;
-    return null;
-  }} shouldInvokeFns={true} />
+  return (
+    <Stringify
+      fn={() => {
+        if (shouldReadA) return a.b.c;
+        return null;
+      }}
+      shouldInvokeFns={true}
+    />
+  );
 }
 
 export const FIXTURE_ENTRYPOINT = {

@@ -1,6 +1,6 @@
 // @enablePropagateDepsInHIR
 
-import { Stringify } from "shared-runtime";
+import {Stringify} from 'shared-runtime';
 
 function useFoo(a) {
   return <Stringify fn={() => a.b.c} shouldInvokeFns={true} />;
