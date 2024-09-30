@@ -46,7 +46,7 @@ export function propagateScopeDependenciesHIR(fn: HIRFunction): void {
 
   const hoistablePropertyLoads = keyByScopeId(
     fn,
-    collectHoistablePropertyLoads(fn, temporaries, hoistableObjects),
+    collectHoistablePropertyLoads(fn, temporaries, hoistableObjects, null),
   );
 
   const scopeDeps = collectDependencies(

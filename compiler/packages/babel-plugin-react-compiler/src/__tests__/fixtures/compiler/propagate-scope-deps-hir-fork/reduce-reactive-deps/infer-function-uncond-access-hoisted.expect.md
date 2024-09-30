@@ -28,9 +28,9 @@ import { Stringify } from "shared-runtime";
 function useFoo(a) {
   const $ = _c(2);
   let t0;
-  if ($[0] !== a) {
+  if ($[0] !== a.b.c) {
     t0 = <Stringify fn={() => a.b.c} shouldInvokeFns={true} />;
-    $[0] = a;
+    $[0] = a.b.c;
     $[1] = t0;
   } else {
     t0 = $[1];

@@ -475,10 +475,10 @@ const skipFilter = new Set([
   'rules-of-hooks/rules-of-hooks-69521d94fa03',
 
   // bugs
-  'reduce-reactive-deps/bug-infer-function-cond-access-not-hoisted',
   'fbt/bug-fbt-plural-multiple-function-calls',
   'fbt/bug-fbt-plural-multiple-mixed-call-tag',
   'bug-invalid-hoisting-functionexpr',
+  'bug-try-catch-maybe-null-dependency',
   'reduce-reactive-deps/bug-merge-uncond-optional-chain-and-cond',
   'original-reactive-scopes-fork/bug-nonmutating-capture-in-unsplittable-memo-block',
   'original-reactive-scopes-fork/bug-hoisted-declaration-with-scope',
